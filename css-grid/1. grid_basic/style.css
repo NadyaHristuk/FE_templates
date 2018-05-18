@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+.grid-item {
+	padding: .6em;
+}
+
+.grid-item:nth-of-type(even) {
+	background: #e0e0e0;
+}
+
+.grid-item:nth-of-type(odd) {
+	background: #cccccc;
+}
+
+.grid {
+	display: grid;
+	/*grid-template-columns: 1fr minmax(150px, 1fr) 1fr;*/
+/*	grid-template-rows: 200px 150px 100px;*/
+/*	grid-auto-rows: minmax(100px, auto);*/
+/*	grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+/*	grid-gap: 10px 20px;*/
+	grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}

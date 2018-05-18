@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+.grid-item {
+	padding: .6em;
+}
+
+.grid-item:nth-of-type(even) {
+	background: #e0e0e0;
+}
+
+.grid-item:nth-of-type(odd) {
+	background: #cccccc;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	grid-auto-rows: 100px;
+}
+
+.grid-item-2 {
+	justify-self: end;
+	align-self: end;
+}
